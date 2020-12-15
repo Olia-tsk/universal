@@ -1,0 +1,147 @@
+.main
+  padding-top: 30px
+  background: linear-gradient($dark 79%, $bg-color 79%)
+  &-wrapper
+    width: 1140px
+    height: 570px
+    display: flex
+    flex-direction: row-reverse
+    border-radius: 10px
+    overflow: hidden
+  &-tabs
+    background-color: $light
+    width: 263px
+    &__title
+      padding: 20px 25px
+      margin: 0
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+  &-content
+    &__item
+      width: 877px
+      height: 570px
+      position: relative
+      display: none
+      &--active
+        display: block
+        overflow: hidden
+      &::before
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: 2
+    &__image
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      height: 100%
+      width: 100%
+      object-fit: cover
+      z-index: 1
+    &__wrapper
+      position: absolute
+      left: 55px
+      top: 55px
+      bottom: 100px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      z-index: 3
+    &__author
+      display: flex
+      align-items: center
+      &-avatar
+        margin-right: 10px
+        border-radius: 50%
+      &-info
+        display: flex
+        flex-direction: column
+      &-name
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+      &-job
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        opacity: 0.4
+    &__subtitile
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      color: #4592FF
+    &__title
+      margin: 0
+      margin-top: 20px
+      margin-bottom: 50px
+      padding: 0
+      font-family: 'Roboto'
+      font-weight: 700
+      font-size: 40px
+      line-height: 50px
+      color: #FFFFFF
+.tabs
+  &__item
+    padding: 17px 25px 19px 25px
+    min-height: 99px
+    border-top: 1px solid #d9dadb
+    cursor: pointer
+    &--active
+      background-color: #f5f5f5
+  &__title
+    padding: 0
+    margin: 0
+    margin-bottom: 8px
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    &--color
+      &-bluegreen
+        color: #3BBDC4
+      &-greyblue
+        color: #6E99AE
+      &-purple
+        color: #AC8EE3
+      &-orange
+        color: #FFA34D
+      &-green
+        color: #3DC47E
+  &__desc
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+
+.button
+  display: inline-block
+  width: 154px
+  padding-top: 12px
+  padding-bottom: 8px
+  border-radius: 20px
+  background-color: #4592ff
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  text-align: center
+  color: #FFFFFF
+  &__icon-arrow
+    width: 15px
+    height: 7px
+    margin-left: 8px
+    background-color: #4592ff
+    fill: #ffffff
