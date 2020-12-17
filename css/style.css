@@ -566,6 +566,8 @@ input {
 }
 
 .main-content__author-avatar {
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -588,6 +590,10 @@ input {
   line-height: 15px;
   color: #FFFFFF;
   opacity: 0.4;
+}
+
+.main-content__info {
+  width: 598px;
 }
 
 .main-content__subtitile {
