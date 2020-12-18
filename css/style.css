@@ -1323,6 +1323,10 @@ input {
   cursor: pointer;
 }
 
+.newsfeed-main__bookmark--added {
+  fill: #ff4f52;
+}
+
 .newsfeed-main__title {
   margin: 0;
   margin-bottom: 7px;
