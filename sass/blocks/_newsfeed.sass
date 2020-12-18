@@ -1,0 +1,171 @@
+.newsfeed
+  padding-top: 60px
+  padding-bottom: 60px
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &-main
+    padding-left: 26px
+    padding-right: 20px
+    max-width: 848px
+    background-color: #ffffff
+    border-radius: 10px
+    &__item
+      position: relative
+      padding-top: 25px
+      padding-bottom: 24px
+      display: flex
+      align-items: center
+      border-bottom: 1px solid #d9dadb
+    &__image
+      margin-right: 25px
+      width: 336px
+      height: 195px
+      object-fit: cover
+    &__info
+      padding-top: 3px
+      padding-bottom: 5px
+      min-height: 195px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__label
+      display: inline-block
+      margin-bottom: 15px
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &--blue
+        color: #4592FF
+      &--bluegreen
+        color: #3BBDC4
+      &--red
+        color: #FF4F52
+      &--purple
+        color: #AC8EE3
+    &__bookmark
+      position: absolute
+      top: 26px
+      right: 7px
+      width: 14px
+      height: 18px
+      fill: #bcbfc2
+      cursor: pointer
+    &__title
+      margin: 0
+      margin-bottom: 7px
+    &__link
+      font-family: 'Roboto'
+      font-weight: 700
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+    &__text
+      margin: 0
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__bottom
+      display: flex
+      justify-content: flex-start
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__date
+      margin-right: 11px
+    &__comment
+      margin-right: 11px
+      display: flex
+      align-items: center
+      &-icon
+        margin-right: 5px
+        width: 15px
+        height: 15px
+        fill: #bcbfc2
+        cursor: pointer
+    &__likes
+      display: flex
+      align-items: center
+      &-icon
+        margin-right: 5px
+        width: 15px
+        height: 15px
+        fill: #bcbfc2
+        cursor: pointer
+
+  &-sidebar
+    margin-left: 29px
+    padding: 20px 25px 14px 25px
+    background-color: #ffffff
+    border-radius: 10px
+    &__title
+      margin: 0
+      margin-bottom: 20px
+      text-align: center
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $dark
+    &__item
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      padding-top: 17px
+      padding-bottom: 17px
+      border-bottom: 1px solid #d9dadb
+      &:last-child
+        border-bottom: none
+    &__number
+      position: absolute
+      top: 26px
+      right: -1px
+      font-size: 70px
+      font-style: italic
+      font-weight: 900
+      line-height: 50px
+      color: #262D33
+      opacity: 0.08
+    &__image
+      margin-right: 10px
+      width: 60px
+      height: 60px
+      object-fit: cover
+    &__link
+      display: block
+      margin-bottom: 5px
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__time
+      display: block
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__more
+      position: relative
+      display: block
+      padding-top: 12px
+      width: 100%
+      text-align: center
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      &::before
+        content: ''
+        position: absolute
+        left: -25px
+        right: -25px
+        bottom: 30px
+        height: 1px
+        background-color: #d9dadb

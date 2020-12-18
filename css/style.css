@@ -1243,6 +1243,238 @@ input {
   z-index: 60;
 }
 
+.newsfeed {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.newsfeed-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.newsfeed-main {
+  padding-left: 26px;
+  padding-right: 20px;
+  max-width: 848px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.newsfeed-main__item {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9dadb;
+}
+
+.newsfeed-main__image {
+  margin-right: 25px;
+  width: 336px;
+  height: 195px;
+  object-fit: cover;
+}
+
+.newsfeed-main__info {
+  padding-top: 3px;
+  padding-bottom: 5px;
+  min-height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newsfeed-main__label {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.newsfeed-main__label--blue {
+  color: #4592FF;
+}
+
+.newsfeed-main__label--bluegreen {
+  color: #3BBDC4;
+}
+
+.newsfeed-main__label--red {
+  color: #FF4F52;
+}
+
+.newsfeed-main__label--purple {
+  color: #AC8EE3;
+}
+
+.newsfeed-main__bookmark {
+  position: absolute;
+  top: 26px;
+  right: 7px;
+  width: 14px;
+  height: 18px;
+  fill: #bcbfc2;
+  cursor: pointer;
+}
+
+.newsfeed-main__title {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.newsfeed-main__link {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.newsfeed-main__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.newsfeed-main__bottom {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.newsfeed-main__date {
+  margin-right: 11px;
+}
+
+.newsfeed-main__comment {
+  margin-right: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.newsfeed-main__comment-icon {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  fill: #bcbfc2;
+  cursor: pointer;
+}
+
+.newsfeed-main__likes {
+  display: flex;
+  align-items: center;
+}
+
+.newsfeed-main__likes-icon {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  fill: #bcbfc2;
+  cursor: pointer;
+}
+
+.newsfeed-sidebar {
+  margin-left: 29px;
+  padding: 20px 25px 14px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.newsfeed-sidebar__title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+}
+
+.newsfeed-sidebar__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #d9dadb;
+}
+
+.newsfeed-sidebar__item:last-child {
+  border-bottom: none;
+}
+
+.newsfeed-sidebar__number {
+  position: absolute;
+  top: 26px;
+  right: -1px;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 50px;
+  color: #262D33;
+  opacity: 0.08;
+}
+
+.newsfeed-sidebar__image {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.newsfeed-sidebar__link {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.newsfeed-sidebar__time {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.newsfeed-sidebar__more {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+}
+
+.newsfeed-sidebar__more::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  right: -25px;
+  bottom: 30px;
+  height: 1px;
+  background-color: #d9dadb;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
