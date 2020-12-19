@@ -1,0 +1,117 @@
+.footer
+  background-color: #ffffff
+  &-list-wrapper
+    margin-bottom: 47px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &__list
+    position: relative
+    width: 165px
+    margin-top: 36px
+    &::before
+      position: absolute
+      content: ''
+      height: 5px
+      top: -36px
+      left: -1px
+      right: -29px
+    &--red::before
+      background-color: #FF4F52
+    &--purple::before
+      background-color: #AC8EE3
+    &--blue::before
+      background-color: #4592FF
+    &--orange::before
+      background-color: #FFA34D
+    &--green::before
+      background-color: #3DC47E
+    &--greyblue::before
+      background-color: #6E99AE
+      right: 1px
+  &__item
+    margin-bottom: 15px
+  &__title
+    margin: 0
+    margin-bottom: 25px
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+  &__link
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    &--bold
+      font-weight: 900
+  &-contacts-wrapper
+    border-top: 1px solid #d9dadb
+    border-bottom: 1px solid #d9dadb
+    padding-top: 29px
+    padding-bottom: 29px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__contacts
+    display: flex
+    align-items: center
+    &-list
+      display: flex
+    &-item
+      margin-left: 30px
+    &-link
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $dark
+  &__social
+    display: flex
+    align-items: center
+    &-icon
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: 15px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      &--darkblue
+        background-color: #4267B2
+      &--skyblue
+        background-color: #1DA1F2
+      &--red
+        background-color: #FF0000
+      &--black
+        background-color: #262626
+  &__icon
+    fill: #ffffff
+    &--fb
+      width: 10px
+      height: 18px
+    &--tw
+      width: 18px
+      height: 15px
+    &--youtube
+      width: 18px
+      height: 14px
+    &--inst
+      width: 17px
+      height: 17px
+  &__bottom
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-top: 40px
+    padding-bottom: 55px
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+  &__site-desc
+    margin-top: 0
+    width: 750px
+  &__copyright
+    margin-top: 0
