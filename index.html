@@ -1113,6 +1113,46 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <svg class="modal__close-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </a>
+
+            <div class="modal__feedback-form">
+                <h3 class="modal__title">
+                    Обратная связь
+                </h3>
+                <form action="" class="modal__form form">
+                    <label for="theme" class="modal__label">Тема</label>
+                    <select name="theme" class="modal__select" placeholder="Выберите тему">
+                        <option value="" class="modal__select-option">Реклама</option>
+                        <option value="" class="modal__select-option">Работа</option>
+                        <option value="" class="modal__select-option">Стать автором</option>
+                        <option value="" class="modal__select-option">Курсы</option>
+                    </select>
+                    <label for="message" class="modal__label">Сообщение</label>
+                    <textarea name="message" class="modal__textarea"></textarea>
+                    <label for="email" class="modal__label">Email</label>
+                    <input type="email" name="email" class="modal__input">
+                    <label class="modal__label-check">
+                        <input type="checkbox" checked class="modal__checkbox">
+                        Согласен с обработкой данных
+                    </label>
+
+                    <div class="modal__btn">
+                        <button type="submit" class="modal__button button" value="feedbackBtn">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
