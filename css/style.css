@@ -1726,6 +1726,46 @@ input {
   background-color: #ffffff;
 }
 
+.subscribe {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #ffffff;
+}
+
+.subscribe__title {
+  margin: 0;
+  margin-bottom: 23px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262D33;
+}
+
+.subscribe__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe__input {
+  width: 313px;
+  margin-right: 10px;
+  padding: 9px 15px;
+  border: 1px solid #d9dadb;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #939699;
+}
+
+.subscribe__button {
+  border-radius: 20px;
+  padding: 10px 25px;
+  width: auto;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
