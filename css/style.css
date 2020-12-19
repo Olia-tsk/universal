@@ -1959,6 +1959,219 @@ input {
   margin-top: 0;
 }
 
+.navbar-menu__link:hover {
+  color: #c6e2ff;
+}
+
+.navbar-menu__link:active {
+  color: #4592ff;
+}
+
+.main-content__author:hover .main-content__author-name {
+  color: #c6e2ff;
+}
+
+.main-content__author:active .main-content__author-name {
+  color: #4592ff;
+}
+
+.main-content__button:hover .button__icon-arrow {
+  text-decoration: none;
+  background: #1659b6;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #344d9e;
+  transition: all 250ms linear;
+}
+
+.main-content__button:active .button__icon-arrow {
+  background: #4d5157;
+  transition: none;
+}
+
+.main-article__button:hover .button__icon-arrow {
+  text-decoration: none;
+  background: #1659b6;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #344d9e;
+  transition: all 250ms linear;
+}
+
+.main-article__button:active .button__icon-arrow {
+  background: #4d5157;
+  transition: none;
+}
+
+.tabs__item:hover {
+  background-color: #f5f5f5;
+}
+
+.newsline-list__link:hover {
+  color: #c6e2ff;
+}
+
+.newsline-list__link:active {
+  color: #4592ff;
+}
+
+.button:hover {
+  text-decoration: none;
+  background: #1659b6;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #344d9e;
+  transition: all 250ms linear;
+}
+
+.button:active {
+  background: #4d5157;
+  transition: none;
+}
+
+.button:active .actual-slider__button-number {
+  color: #d4d4d4;
+}
+
+.card-1__comment:hover .card-1__comment-icon {
+  fill: #4593ff62;
+}
+
+.card-1__comment-text:hover {
+  color: #4592ff;
+}
+
+.card-1__comment-text:active {
+  color: #4d5157;
+}
+
+.card-simple__link:hover {
+  color: #4592ff;
+}
+
+.card-simple__link:active {
+  color: #4d5157;
+}
+
+.card-1__link:hover, .card-4__link:hover {
+  color: #4592ff;
+}
+
+.card-1__link:active, .card-4__link:active {
+  color: #4d5157;
+}
+
+.card-2__link:hover {
+  color: #bdffe3;
+}
+
+.card-2__link:active {
+  color: #4d5157;
+}
+
+.card-2__comment:hover .card-2__comment-icon {
+  fill: #000000c7;
+}
+
+.card-2__likes:hover .card-2__likes-icon {
+  fill: #000000;
+}
+
+.card-3__button:hover {
+  opacity: 0.5;
+}
+
+.card-3__button:active {
+  color: #4d5157;
+}
+
+.card-3__button:active .card-3__button-icon {
+  fill: #4d5157;
+}
+
+.card-7__tag:hover {
+  background-color: #3bbdc44f;
+}
+
+.card-7__tag:active {
+  background-color: #3bbdc4;
+  color: #ffffff;
+}
+
+.card-10__social:hover {
+  box-shadow: 2px 2px 5px 5px rgba(73, 73, 73, 0.2);
+}
+
+.card-10__social:active {
+  box-shadow: 2px 2px 5px 5px rgba(75, 75, 75, 0.459);
+}
+
+.newsfeed-main__link:hover {
+  color: #4592ff;
+}
+
+.newsfeed-main__link:active {
+  color: #4d5157;
+}
+
+.newsfeed-main__comment:hover .newsfeed-main__comment-icon {
+  fill: #4593ff62;
+}
+
+.newsfeed-main__likes:hover .newsfeed-main__likes-icon {
+  fill: #e945ff62;
+}
+
+.newsfeed-main__bookmark:hover {
+  fill: #ff4f5263;
+}
+
+.newsfeed-sidebar__link:hover {
+  color: #4592ff;
+}
+
+.newsfeed-sidebar__link:active {
+  color: #4d5157;
+}
+
+.newsfeed-sidebar__more:hover {
+  color: #4592ff;
+}
+
+.newsfeed-sidebar__more:active {
+  color: #4d5157;
+}
+
+.actual__link:hover {
+  color: #4592ff;
+}
+
+.actual__link:active {
+  color: #4d5157;
+}
+
+.footer__link:hover {
+  color: #4592ff;
+}
+
+.footer__link:active {
+  color: #FF0000;
+}
+
+.footer__contacts-link:hover {
+  color: #4592ff;
+}
+
+.footer__contacts-link:active {
+  color: #FF0000;
+}
+
+.footer__social-icon:hover {
+  box-shadow: 2px 2px 5px 5px rgba(73, 73, 73, 0.2);
+}
+
+.footer__social-icon:active {
+  box-shadow: 2px 2px 5px 5px rgba(75, 75, 75, 0.459);
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
