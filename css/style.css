@@ -1479,6 +1479,253 @@ input {
   background-color: #d9dadb;
 }
 
+.actual {
+  background-color: #262D33;
+}
+
+.actual-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.actual-slider {
+  position: relative;
+  margin-right: 30px;
+  max-width: 555px;
+  height: 570px;
+  z-index: 1;
+}
+
+.actual-slider__article-info {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 455px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 15;
+}
+
+.actual-slider__item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.actual-slider__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  z-index: 10;
+}
+
+.actual-slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.actual-slider__pagination {
+  margin-bottom: 33px;
+}
+
+.actual-slider__hot-label {
+  position: absolute;
+  padding: 5px 12px;
+  top: -33px;
+  left: -31px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  background-color: #3dc47e;
+}
+
+.actual-slider__author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.actual-slider__author-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.actual-slider__author-name {
+  margin-bottom: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.85;
+}
+
+.actual-slider__author-job {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.actual-slider__title {
+  margin: 0;
+  margin-bottom: 43px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+.actual-slider__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  width: auto;
+}
+
+.actual-slider__button-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+  fill: #ffffff;
+}
+
+.actual-slider__button-number {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C5E4FC;
+}
+
+.actual__item {
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 263px;
+  padding: 25px 25px 30px 25px;
+}
+
+.actual__item--big {
+  height: 369px;
+  flex-basis: 100%;
+  margin-bottom: 29px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #b4d1e0;
+  background-image: url("../img/actual/article-img.png"), url("../img/actual/oval.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, top 65px right 30px;
+  background-size: cover, auto;
+}
+
+.actual__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.actual__label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #6E99AE;
+}
+
+.actual__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.actual__title--big {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 243px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.actual__link {
+  color: inherit;
+}
+
+.actual__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.actual__text--big {
+  width: 213px;
+}
+
+.actual__date {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+}
+
+.actual__button {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.actual__button-icon {
+  width: 15px;
+  height: 7px;
+  fill: #ffffff;
+  margin-left: 8px;
+}
+
+.swiper-pagination-bullets {
+  margin-right: 8px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d9dadb;
+  margin-right: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;

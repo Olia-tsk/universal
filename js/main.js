@@ -25,4 +25,27 @@ $(document).ready(function() {
         }
     })
 
+    // Подключение слайдера на главной странице
+    var actualSlider = new Swiper('.actual-slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 300,
+
+        autoplay: {
+            delay: 4500,
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+    });
+
+
 });
