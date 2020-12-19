@@ -416,6 +416,10 @@ input {
   margin: auto;
 }
 
+.error {
+  width: 270px;
+}
+
 .navbar {
   background-color: #262D33;
 }
@@ -1743,9 +1747,15 @@ input {
   color: #262D33;
 }
 
-.subscribe__wrapper {
+.subscribe__form {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+}
+
+.subscribe__error-aliner {
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe__input {

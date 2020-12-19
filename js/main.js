@@ -47,5 +47,14 @@ $(document).ready(function() {
         },
     });
 
+    // Обработка форм
+    $('.subscribe__form').validate({
+        messages: {
+            subscriptionalEmail: {
+                required: "Вы не можете оформить подписку, не указав почты :(",
+                email: "Пожалуйста, укажите корректный email"
+            }
+        }
+    });
 
 });

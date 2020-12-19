@@ -855,12 +855,15 @@
             <h2 class="subscribe__title">
                 Подпишитесь на нашу рассылку
             </h2>
-            <form action="send.php" method="POST" class="sudscribe__form form">
-                <div class="subscribe__wrapper">
-                    <input type="email" name="subscriptionalEmail" class="subscribe__input" placeholder="Email" required>
+            <div class="subscribe__wrapper">
+                <form action="send.php" method="POST" class="subscribe__form form">
+                    <div class="subscribe__error-aliner">
+                        <input type="email" name="subscriptionalEmail" class="subscribe__input" placeholder="Email" required>
+                    </div>
                     <button class="subscribe__button button">Подписаться</button>
-                </div>
-            </form>
+
+                </form>
+            </div>
         </div>
     </section>
 
@@ -868,6 +871,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
