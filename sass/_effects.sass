@@ -205,3 +205,195 @@
         box-shadow: 2px 2px 5px 5px rgba(73, 73, 73, 0.2)
       &:active
         box-shadow: 2px 2px 5px 5px rgba(75, 75, 75, 0.459)
+
+// Отключаем эффекты на планшетах
+@media (max-width: 768px)
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: #ffffff
+          text-shadow: none
+        &:active
+          color: #ffffff
+
+  .main
+    &-content
+      &__author
+        &:hover
+          .main-content__author-name
+            color: #ffffff
+            text-shadow: none
+        &:active
+          .main-content__author-name
+            color: #ffffff
+
+      &__button
+        &:hover
+          .button__icon-arrow
+            text-decoration: none
+            background: #4592ff
+            color: #ffffff
+            text-shadow: none
+            transition: none
+        &:active
+          .button__icon-arrow
+            background: #4592ff
+            transition: none
+    &-article
+      &__button
+        &:hover
+          .button__icon-arrow
+            text-decoration: none
+            background: #4592ff
+            color: #ffffff
+            text-shadow: none
+            transition: none
+        &:active
+          .button__icon-arrow
+            background: #4592ff
+            transition: none
+
+  .tabs
+    &__item
+      &:hover
+        background-color: #ffffff
+
+  .newsline
+    &-list
+      &__link
+        &:hover
+          color: #ffffff
+          text-shadow: none
+        &:active
+          color: #ffffff
+
+  .button
+    &:hover
+      text-decoration: none
+      background: #4592ff
+      box-shadow: none
+      color: #ffffff
+      text-shadow: none
+      transition: none
+    &:active
+      background: #4592ff
+      transition: none
+      .actual-slider__button-number
+        color: #c5e4fc
+
+  .card
+    &-1
+      &__comment
+        &:hover
+          .card-1__comment-icon
+            fill: #bcbfc2
+        &-text
+          &:hover
+            color: #4b5157
+          &:active
+            color: #4d5157
+    &-simple
+      &__link
+        &:hover
+          color: #4592ff
+        &:active
+          color: #4d5157
+    &-1, &-4
+      &__link
+        &:hover
+          color: #4592ff
+        &:active
+          color: #4d5157
+    &-2
+      &__link
+        &:hover
+          color: #bdffe3
+        &:active
+          color: #4d5157
+      &__comment
+        &:hover
+          .card-2__comment-icon
+            fill: #000000c7
+      &__likes
+        &:hover
+          .card-2__likes-icon
+            fill: #000000
+    &-3
+      &__button
+        &:hover
+          opacity: 0.5
+        &:active
+          color: #4d5157
+          .card-3__button-icon
+            fill: #4d5157
+    &-7
+      &__tag
+        &:hover
+          background-color: #3bbdc44f
+        &:active
+          background-color: #3bbdc4
+          color: #ffffff
+    &-10
+      &__social
+        &:hover
+          box-shadow: none
+        &:active
+          box-shadow: none
+
+  .newsfeed
+    &-main
+      &__link
+        &:hover
+          none
+        &:active
+          color: #4d5157
+      &__comment
+        &:hover
+          .newsfeed-main__comment-icon
+            fill: #4593ff62
+      &__likes
+        &:hover
+          .newsfeed-main__likes-icon
+            fill: #e945ff62
+      &__bookmark
+        &:hover
+          fill: #ff4f5263
+
+    &-sidebar
+      &__link
+        &:hover
+          color: #4592ff
+        &:active
+          color: #4d5157
+      &__more
+        &:hover
+          color: #4592ff
+        &:active
+          color: #4d5157
+
+  .actual
+    &__link
+      &:hover
+        color: #4592ff
+      &:active
+        color: #4d5157
+
+  .footer
+    &__link
+      &:hover
+        color: #4592ff
+      &:active
+        color: #FF0000
+    &__contacts
+      &-link
+        &:hover
+          color: #4592ff
+        &:active
+          color: #FF0000
+    &__social
+      &-icon
+        &:hover
+          box-shadow: none
+        &:active
+          box-shadow: none
