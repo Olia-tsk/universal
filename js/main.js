@@ -47,14 +47,62 @@ $(document).ready(function() {
         },
     });
 
-    // Обработка форм
-    $('.subscribe__form').validate({
-        messages: {
-            subscriptionalEmail: {
-                required: "Вы не можете оформить подписку, не указав почты :(",
-                email: "Пожалуйста, укажите корректный email"
-            }
-        }
+    // Открываем модальное окно
+    var modalButton = $("[data-toggle=modal]");
+    var modalCloseButton = $('.modal__close');
+    var modalWindow = $('.modal__dialog');
+    modalButton.on('click', openModal);
+    modalCloseButton.on('click', closeModal);
+
+    function openModal(event) {
+        event.preventDefault();
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.addClass('modal__overlay--visible');
+        modalDialog.addClass('modal__dialog--visible');
+    };
+
+    function closeModal(event) {
+        event.preventDefault();
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.removeClass('modal__overlay--visible');
+        modalDialog.removeClass('modal__dialog--visible');
+    };
+
+    // Закрыть модальное окно на кнопку esc
+    $(document).on('keydown', function(e) {
+        if (e.keyCode == 27)
+            var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.removeClass('modal__overlay--visible');
+        modalDialog.removeClass('modal__dialog--visible');
     });
+
+    // Закрыть модальное окно при клике вне модального окна
+    $(document).click(function(e) {
+        if (!modalButton.is(e.target) && !modalWindow.is(e.target) && modalWindow.has(e.target).length === 0) {
+            var modalOverlay = $('.modal__overlay');
+            var modalDialog = $('.modal__dialog');
+            modalOverlay.removeClass('modal__overlay--visible');
+            modalDialog.removeClass('modal__dialog--visible');
+        };
+    });
+
+    // Обработка форм
+    $('.form').each(function() {
+        $(this).validate({
+            messages: {
+                subscriptionalEmail: {
+                    required: "Вы не можете оформить подписку, не указав почты :(",
+                    email: "Пожалуйста, укажите корректный email"
+                },
+                email: {
+                    required: "Для отправки обращения, укажите почту",
+                    email: "Пожалуйста, укажите корректный email"
+                }
+            }
+        });
+    })
 
 });

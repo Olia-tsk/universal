@@ -860,7 +860,7 @@
                     <div class="subscribe__error-aliner">
                         <input type="email" name="subscriptionalEmail" class="subscribe__input" placeholder="Email" required>
                     </div>
-                    <button class="subscribe__button button">Подписаться</button>
+                    <button class="subscribe__button button" name="button" value="subscribeBtn">Подписаться</button>
                 </form>
             </div>
         </div>
@@ -1057,22 +1057,22 @@
                     </a>
                     <ul class="footer__contacts-list">
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Контакты
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Работа у нас
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Реклама
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" data-toggle="modal" class="footer__contacts-link">
                                 Обратная связь
                             </a>
                         </li>
@@ -1127,24 +1127,24 @@
                 <h3 class="modal__title">
                     Обратная связь
                 </h3>
-                <form action="" class="modal__form form">
+                <form action="send.php" method="POST" class="modal__form form">
 
                     <div class="modal__wrapper">
                         <label for="theme" class="modal__label">Тема</label>
-                        <select name="theme" class="modal__select">
+                        <select id="theme" name="theme" class="modal__select">
                             <option class="modal__select-option">
                                 Выберите тему
                             </option>
-                            <option value="Реклама" class="modal__select-option">
+                            <option value="Реклама" id="modal-option-1" class="modal__select-option">
                                 Реклама
                             </option>
-                            <option value="Работа" class="modal__select-option">
+                            <option value="Работа" id="modal-option-2" class="modal__select-option">
                                 Работа
                             </option>
-                            <option value="Стать автором" class="modal__select-option">
+                            <option value="Стать автором" id="modal-option-3" class="modal__select-option">
                                 Стать автором
                             </option>
-                            <option value="Курсы" class="modal__select-option">
+                            <option value="Курсы" id="modal-option-4" class="modal__select-option">
                                 Курсы
                             </option>
                         </select>
@@ -1152,12 +1152,12 @@
 
                     <div class="modal__wrapper modal__wrapper--textarea">
                         <label for="message" class="modal__label">Сообщение</label>
-                        <textarea name="message" class="modal__textarea"></textarea>
+                        <textarea id="message" name="message" class="modal__textarea"></textarea>
                     </div>
 
                     <div class="modal__wrapper">
                         <label for="email" class="modal__label modal__label-mail">Email</label>
-                        <input type="email" name="email" class="modal__input">
+                        <input id="email" type="email" name="email" class="modal__input" required>
                     </div>
 
                     <div class="modal__wrapper">
@@ -1168,7 +1168,7 @@
                     </div>
 
                     <div class="modal__btn">
-                        <button type="submit" class="modal__button button" value="feedbackBtn">Отправить</button>
+                        <button type="submit" class="modal__button button" name="button" value="feedbackBtn">Отправить</button>
                     </div>
                 </form>
             </div>

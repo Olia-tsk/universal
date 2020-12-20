@@ -5,15 +5,30 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$email = $_POST['subscriptionalEmail'];
+$subEmail = $_POST['subscriptionalEmail'];
+$option = $_POST['modal-option'];
+$message = $_POST['message'];
+$modalMail = $_POST['email'];
+$button = $_POST['button'];
 
-// Формирование самого письма
-$title = "Подписка на новости Universal";
-$body = "
+
+// Формирование письма с подпиской
+$titleSub = "Подписка на новости Universal";
+$bodySub = "
 <h2>Ура, новый подписчик!</h2>
-<b>Подписка оформлена на почту:</b> $email<br>
+<b>Подписка оформлена на почту:</b> $subEmail<br>
 ";
 
+// Формирование письма с обратной связью
+$titleModal = "Обратная связь";
+$bodyModal = "
+<h2>Новое сообщение</h2>
+<b>Тема:</b> $option<br>
+<b>Сообщение:</b> $message<br>
+<b>Почта отправителя:</b> $modalMail
+";
+
+function sendMessage ($title,$body) {
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -48,6 +63,19 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
+}
+
+if ($button == 'subscribeBtn') {
+    sendMessage($titleSub, $bodySub);
+    header('Location: thankyou.php');
+
+} elseif ($button == 'feedbackBtn') {
+    sendMessage($titleModal, $bodyModal);
+    header('Location: thankyou.php');
+} else {
+    echo 'Error';
+}
+
+
 // Отображение результата
 //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-header('Location: thankyou.php');
