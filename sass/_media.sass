@@ -377,6 +377,35 @@
     &-menu
       &__list
         display: none
+        &--mobile
+          &--visible
+            overflow: scroll
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: fixed
+            padding-top: 20px
+            width: 100%
+            margin: 0
+            left: 0
+            top: 50px
+            right: 0
+            bottom: 0
+            background-color: $dark
+            justify-content: flex-start
+      &__item
+        margin-right: 0
+        margin-bottom: 20px
+      &__link
+        font-size: 16px
+        line-height: 21px
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 100
   .burger
     width: 20px
     height: 14px
@@ -575,6 +604,16 @@
 @media (max-width: 576px)
   .search
     display: none
+  .navbar
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            display: block
+      &__search
+        &--mobile
+          &--visible
+            display: block
   .newsline
     &-list
       flex-direction: column
@@ -678,6 +717,10 @@
       &__image
         width: 105px
         height: 25px
+    &-menu
+      &__link
+        font-size: 14px
+        line-height: 18px
   .main
     &-wrapper
       height: 490px

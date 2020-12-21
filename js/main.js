@@ -47,6 +47,12 @@ $(document).ready(function() {
         },
     });
 
+    // Активируем бургер
+    var burger = document.querySelector('.burger');
+    burger.addEventListener('click', function() {
+        document.querySelector('.navbar-menu__list').classList.toggle('navbar-menu__list--mobile--visible');
+    });
+
     // Открываем модальное окно
     var modalButton = $("[data-toggle=modal]");
     var modalCloseButton = $('.modal__close');
