@@ -108,6 +108,7 @@
     background-color: #ffffff
     border-radius: 10px
     &__title
+      position: relative
       margin: 0
       margin-bottom: 20px
       text-align: center
@@ -117,6 +118,14 @@
       letter-spacing: 0.5px
       text-transform: uppercase
       color: $dark
+      &::after
+        content: ''
+        height: 1px
+        position: absolute
+        right: -26px
+        left: -26px
+        bottom: -15px
+        background-color: #d9dadb
     &__item
       position: relative
       display: flex

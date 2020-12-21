@@ -376,15 +376,20 @@
   .footer
     &__link
       &:hover
-        color: #4592ff
+        color: #4b5157
       &:active
-        color: #FF0000
+        color: #4b5157
+        &--bold
+          &:hover
+            color: $dark
+          &:active
+            color: $dark
     &__contacts
       &-link
         &:hover
-          color: #4592ff
+          color: $dark
         &:active
-          color: #FF0000
+          color: $dark
     &__social
       &-icon
         &:hover

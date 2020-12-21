@@ -76,6 +76,9 @@
       &--big
         background-size: 170%, 65%
         background-position: top right 61%, top 65px right 5px
+  .footer
+    &__bottom
+      flex-direction: column
 
 @media (max-width: 1024px)
   .main
@@ -118,6 +121,13 @@
         margin-top: 0
       &--big
         margin-top: 0
+  .footer
+    &__list
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 0
 
 @media (max-width: 992px)
   .container
@@ -195,6 +205,10 @@
       &__title
         font-size: 37px
         line-height: 46px
+  .subscribe
+    &__title
+      font-size: 35px
+      line-height: 44px
 
 @media (max-width: 930px)
   .tabs
@@ -291,6 +305,35 @@
       &__title
         font-size: 32px
         line-height: 41px
+  .subscribe
+    &__title
+      font-size: 30px
+  .footer
+    &-list
+      &-wrapper
+        flex-wrap: wrap
+    &__list
+      flex-basis: 33%
+      &::before
+        left: -1px
+        right: -29px
+      &--blue::before
+        left: 4px
+        right: 0
+      &--greyblue::before
+        left: 4px
+        right: 0
+    &-contacts
+      &-wrapper
+        flex-direction: column
+    &__social-icon--darkblue
+      margin-left: 0
+    &__bottom
+      align-items: center
+      width: 100%
+    &__site-desc
+      width: 100%
+      text-align: center
 
 @media (max-width: 768px)
   .main
@@ -320,6 +363,12 @@
       &__title
         font-size: 32px
         line-height: 43px
+  .subscribe
+    &__title
+      font-size: 25px
+      line-height: 35px
+    &__unput
+      width: 255px
 
 @media (max-width: 745px)
   .container
@@ -502,6 +551,26 @@
     &__title
       &--big
         width: 215px
+  .subscribe
+    padding-top: 40px
+    padding-bottom: 40px
+    &__title
+      font-size: 22px
+      line-height: 26px
+  .footer
+    &__contacts
+      width: 100%
+      flex-direction: column
+      margin-bottom: 10px
+      &-list
+        width: 100%
+        margin-top: 15px
+        justify-content: space-between
+      &-item
+        margin-left: 0
+    &__logo
+      width: 40px
+      height: 40px
 
 @media (max-width: 576px)
   .search
@@ -580,6 +649,28 @@
     &__text
       font-size: 12px
       line-height: 18px
+  .subscribe
+    &__form
+      flex-direction: column
+      align-items: center
+    &__button
+      margin-top: 15px
+  .footer
+    &__link
+      font-size: 12px
+    &__list
+      margin-top: 25px
+      &::before
+        top: -25px
+  .footer
+    &__contacts
+      &-list
+        flex-direction: column
+        align-items: center
+      &-item
+        margin-bottom: 15px
+    &__bottom
+      font-size: 12px
 
 @media (max-width: 460px)
   .navbar
@@ -668,6 +759,27 @@
     &__text
       &--big
         width: 110px
+  .subscribe
+    &__input
+      width: 100%
+    &__title
+      font-size: 20px
+      line-height: 24px
+  .footer
+    &__list
+      flex-basis: 50%
+      &::before
+        left: -1px
+        right: 0
+      &--blue::before
+        left: 0
+        right: 0
+      &--greyblue::before
+        left: 0
+        right: 0
+    &__bottom
+      margin-top: 30px
+      padding-bottom: 30px
 
 @media (max-width: 320px)
   .main
@@ -675,3 +787,6 @@
   .button
     font-size: 12px
     line-height: 15px
+  .footer
+    &__list
+      flex-basis: 100%
