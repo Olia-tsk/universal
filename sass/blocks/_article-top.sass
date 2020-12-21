@@ -1,0 +1,84 @@
+.article-top
+  position: relative
+  padding-top: 61px
+  padding-left: 194px
+  &__text
+    width: 622px
+    margin: 0
+    margin-bottom: 30px
+    font-weight: 400
+    font-size: 18px
+    line-height: 30px
+    color: #4B5157
+    &--dropcap
+      margin-bottom: 44px
+      &::first-letter
+        font-size: 101px
+        font-weight: 900
+        padding-right: 4px
+        margin-right: 5px
+        margin-left: -6px
+        margin-top: 11px
+        color: #4592FF
+        float: left
+        line-height: 79px
+  &__title
+    margin: 0
+    margin-bottom: 31px
+    font-family: 'Roboto'
+    font-weight: 700
+    font-size: 25px
+    line-height: 30px
+    color: $dark
+
+  &-card
+    width: 263px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    right: 15%
+    top: -101px
+    border: 1px solid #d9dadb
+    border-radius: 10px
+    background-color: #ffffff
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 35px 25px 20px 25px
+    &__avatar
+      margin-bottom: 15px
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__name
+      margin-bottom: 5px
+      font-family: 'Roboto'
+      font-weight: 700
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+    &__job
+      margin-bottom: 15px
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__amount
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+    &__button
+      width: 100%
+      text-align: center
+      padding-top: 15px
+      padding-bottom: 15px
+      border-top: 1px solid #d9dadb
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      text-decoration: none
+      color: $dark

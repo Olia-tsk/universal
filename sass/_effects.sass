@@ -203,6 +203,20 @@
       &:active
         box-shadow: 2px 2px 5px 5px rgba(75, 75, 75, 0.459)
 
+.hero
+  &__nav-link
+    &:hover
+      color: #4592ff
+    &:active
+      color: #4d5157
+
+.article-top-card
+  &__button
+    &:hover
+      color: #4592ff
+    &:active
+      color: #4d5157
+
 // Отключаем эффекты на планшетах
 @media (max-width: 768px)
   .navbar
@@ -396,3 +410,17 @@
           box-shadow: none
         &:active
           box-shadow: none
+
+  .hero
+    &__nav-link
+      &:hover
+        color: #ffffff
+      &:active
+        color: #ffffff
+
+  .article-top-card
+    &__button
+      &:hover
+        color: $dark
+      &:active
+        color: $dark
