@@ -45,6 +45,9 @@
         background-size: 137%, auto
         background-position: top right 61%, top 65px right 30px
         margin-left: 0
+  .hero
+    &__title
+      width: 100%
 
 @media (max-width: 1100px)
   .navbar
@@ -79,6 +82,9 @@
   .footer
     &__bottom
       flex-direction: column
+  .hero
+    &__text
+      width: 85%
 
 @media (max-width: 1024px)
   .main
@@ -128,6 +134,13 @@
       align-items: center
     &__title
       margin-bottom: 0
+  .hero
+    &__title
+      font-size: 41px
+      line-height: 56px
+    &__text
+      line-height: 27px
+      width: 78%
 
 @media (max-width: 992px)
   .container
@@ -209,6 +222,10 @@
     &__title
       font-size: 35px
       line-height: 44px
+  .hero
+    height: 540px
+    &__bookmark
+      left: 5%
 
 @media (max-width: 930px)
   .tabs
@@ -334,6 +351,15 @@
     &__site-desc
       width: 100%
       text-align: center
+  .hero
+    height: 510px
+    &__title
+      margin-top: 38px
+      font-size: 32px
+      line-height: 46px
+    &__text
+      font-size: 14px
+      line-height: 23px
 
 @media (max-width: 768px)
   .main
@@ -369,6 +395,20 @@
       line-height: 35px
     &__unput
       width: 255px
+  .hero
+    height: 450px
+    &-wrapper
+      padding-top: 30px
+    &__title
+      font-size: 22px
+      line-height: 33px
+    &__text
+      line-height: 21px
+    &__nav-link
+      font-size: 12px
+      line-height: 16px
+    &__bookmark
+      top: 33%
 
 @media (max-width: 745px)
   .container
@@ -519,6 +559,21 @@
       &--big
         font-size: 22px
         line-height: 27px
+  .hero
+    height: 400px
+    &-wrapper
+      padding: 0
+      padding-top: 87px
+    &__title
+      margin-top: 24px
+      width: 80%
+    &__bookmark
+      top: 40%
+      left: -4%
+      width: 13px
+      height: 18px
+    &__text
+      width: 75%
 
 @media (max-width: 683px)
   .newsline
@@ -604,6 +659,17 @@
     &__logo
       width: 40px
       height: 40px
+  .hero
+    height: 390px
+    &__title
+      font-size: 18px
+      line-height: 26px
+    &__text
+      font-size: 12px
+      line-height: 18px
+      width: 65%
+    &__bookmark
+      left: 98%
 
 @media (max-width: 576px)
   .search
@@ -714,6 +780,11 @@
         margin-bottom: 15px
     &__bottom
       font-size: 12px
+  .hero
+    &__title
+      width: 90%
+    &__text
+      width: 80%
 
 @media (max-width: 460px)
   .navbar
@@ -831,6 +902,30 @@
     &__dialog
       width: 80%
       padding: 25px
+  .hero
+    height: 410px
+    &-wrapper
+      padding-top: 75px
+      margin-bottom: 30px
+    &__top
+      flex-direction: column-reverse
+      align-items: flex-start
+      justify-content: flex-start
+    &__label
+      margin-top: 7px
+    &__navigation
+      width: 100%
+      justify-content: space-between
+    &__home
+      flex-basis: 46%
+      margin-right: 0
+    &__title
+      margin-top: 5px
+      margin-bottom: 15px
+      width: 95%
+    &__text
+      margin-bottom: 30px
+      width: 90%
 
 @media (max-width: 320px)
   .main
