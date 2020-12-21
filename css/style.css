@@ -1107,7 +1107,7 @@ input {
 .card-7__title::after {
   content: '';
   position: absolute;
-  bottom: -19px;
+  bottom: -18px;
   left: -25px;
   right: -25px;
   height: 1px;
@@ -2324,10 +2324,10 @@ input {
     color: #262D33;
   }
   .actual__link:hover {
-    color: #4592ff;
+    color: #262D33;
   }
   .actual__link:active {
-    color: #4d5157;
+    color: #262D33;
   }
   .footer__link:hover {
     color: #4592ff;
@@ -2542,6 +2542,21 @@ input {
     max-height: 415px;
     overflow-y: scroll;
   }
+  .actual-slider {
+    height: auto;
+  }
+  .actual__item {
+    width: 46%;
+    margin-left: 10px;
+  }
+  .actual__item--left {
+    margin-left: 0;
+  }
+  .actual__item--big {
+    background-size: 137%, auto;
+    background-position: top right 61%, top 65px right 30px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -2570,6 +2585,10 @@ input {
   }
   .newsfeed-main__bottom {
     margin-top: 5px;
+  }
+  .actual__item--big {
+    background-size: 170%, 65%;
+    background-position: top right 61%, top 65px right 5px;
   }
 }
 
@@ -2608,6 +2627,17 @@ input {
   .card-7 {
     max-height: 435px;
     overflow-y: scroll;
+  }
+  .actual__item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .actual__item--left {
+    margin-top: 0;
+  }
+  .actual__item--big {
+    margin-top: 0;
   }
 }
 
@@ -2764,6 +2794,38 @@ input {
     margin-top: 20px;
     margin-left: 0;
   }
+  .actual-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .actual-slider {
+    margin-right: 0;
+    height: 570px;
+    min-width: 100%;
+  }
+  .actual-slider__article-info {
+    width: 85%;
+  }
+  .actual-slider__hot-label {
+    width: 67px;
+    top: -8%;
+    left: -5%;
+  }
+  .actual__item {
+    width: 48%;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .actual__item--big {
+    background-size: 555px, 279px;
+    background-position: top right 24px, top 65px right 133px;
+  }
+  .actual__title--big {
+    width: 350px;
+  }
+  .swiper-container {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 835px) {
@@ -2802,6 +2864,10 @@ input {
   .main-article__title {
     font-size: 25px;
     line-height: 33px;
+  }
+  .actual-slider__title {
+    font-size: 32px;
+    line-height: 43px;
   }
 }
 
@@ -2923,6 +2989,24 @@ input {
   .newsfeed-main__label {
     margin-bottom: 8px;
   }
+  .actual-slider {
+    height: 500px;
+  }
+  .actual-slider__hot-label {
+    left: -4%;
+  }
+  .actual-slider__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .actual__item--big {
+    background-size: 555px, 250px;
+    background-position: top right -11px, top 65px right 89px;
+  }
+  .actual__title--big {
+    font-size: 22px;
+    line-height: 27px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -2959,6 +3043,10 @@ input {
   .main-article__button {
     font-size: 12px;
   }
+  .newsfeed {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .newsfeed-main__item {
     flex-direction: column;
     padding-bottom: 15px;
@@ -2977,6 +3065,20 @@ input {
   .newsfeed-main__info {
     justify-content: flex-start;
     min-height: 100%;
+  }
+  .actual-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .actual-slider__hot-label {
+    left: -2%;
+  }
+  .actual__item--big {
+    background-size: 555px, 215px;
+    background-position: top right -82px, top 65px right 63px;
+  }
+  .actual__title--big {
+    width: 215px;
   }
 }
 
@@ -3060,6 +3162,17 @@ input {
     object-position: 10% 11%;
     max-width: 82%;
   }
+  .actual__item--big {
+    background-position: top right -130px, top 65px right 5px;
+  }
+  .actual__title--big {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .actual__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -3137,6 +3250,27 @@ input {
   }
   .newsfeed-main__label {
     margin-top: 5px;
+  }
+  .actual-slider {
+    height: 430px;
+  }
+  .actual-slider__title {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .actual__item {
+    width: 100%;
+  }
+  .actual__item--big {
+    background-position: top right -150px, top 65px right -40px;
+  }
+  .actual__title--big {
+    width: 130px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .actual__text--big {
+    width: 110px;
   }
 }
 

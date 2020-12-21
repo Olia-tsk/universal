@@ -33,6 +33,18 @@
     &-7
       max-height: 415px
       overflow-y: scroll
+  .actual
+    &-slider
+      height: auto
+    &__item
+      width: 46%
+      margin-left: 10px
+      &--left
+        margin-left: 0
+      &--big
+        background-size: 137%, auto
+        background-position: top right 61%, top 65px right 30px
+        margin-left: 0
 
 @media (max-width: 1100px)
   .navbar
@@ -59,6 +71,11 @@
         min-width: 40%
       &__bottom
         margin-top: 5px
+  .actual
+    &__item
+      &--big
+        background-size: 170%, 65%
+        background-position: top right 61%, top 65px right 5px
 
 @media (max-width: 1024px)
   .main
@@ -92,6 +109,15 @@
     &-7
       max-height: 435px
       overflow-y: scroll
+  .actual
+    &__item
+      width: 100%
+      margin-left: 0
+      margin-top: 20px
+      &--left
+        margin-top: 0
+      &--big
+        margin-top: 0
 
 @media (max-width: 992px)
   .container
@@ -225,6 +251,33 @@
     &-sidebar
       margin-top: 20px
       margin-left: 0
+  .actual
+    &-wrapper
+      flex-direction: column
+      justify-content: center
+    &-slider
+      margin-right: 0
+      height: 570px
+      min-width: 100%
+      &__article
+        &-info
+          width: 85%
+      &__hot-label
+        width: 67px
+        top: -8%
+        left: -5%
+    &__item
+      width: 48%
+      margin: 0
+      margin-top: 20px
+      &--big
+        background-size: 555px, 279px
+        background-position: top right 24px, top 65px right 133px
+    &__title
+      &--big
+        width: 350px
+  .swiper-container
+    margin-left: 0
 
 @media (max-width: 835px)
   .card
@@ -262,6 +315,11 @@
       &__title
         font-size: 25px
         line-height: 33px
+  .actual
+    &-slider
+      &__title
+        font-size: 32px
+        line-height: 43px
 
 @media (max-width: 745px)
   .container
@@ -363,6 +421,22 @@
         line-height: 20px
       &__label
         margin-bottom: 8px
+  .actual
+    &-slider
+      height: 500px
+      &__hot-label
+        left: -4%
+      &__title
+        font-size: 24px
+        line-height: 34px
+    &__item
+      &--big
+        background-size: 555px, 250px
+        background-position: top right -11px, top 65px right 89px
+    &__title
+      &--big
+        font-size: 22px
+        line-height: 27px
 
 @media (max-width: 683px)
   .newsline
@@ -397,6 +471,8 @@
       &__button
         font-size: 12px
   .newsfeed
+    padding-top: 40px
+    padding-bottom: 40px
     &-main
       &__item
         flex-direction: column
@@ -412,6 +488,20 @@
       &__info
         justify-content: flex-start
         min-height: 100%
+  .actual
+    &-wrapper
+      padding-top: 40px
+      padding-bottom: 40px
+    &-slider
+      &__hot-label
+        left: -2%
+    &__item
+      &--big
+        background-size: 555px, 215px
+        background-position: top right -82px, top 65px right 63px
+    &__title
+      &--big
+        width: 215px
 
 @media (max-width: 576px)
   .search
@@ -479,6 +569,17 @@
         height: 115px
         object-position: 10% 11%
         max-width: 82%
+  .actual
+    &__item
+      &--big
+        background-position: top right -130px, top 65px right 5px
+    &__title
+      &--big
+        font-size: 18px
+        line-height: 20px
+    &__text
+      font-size: 12px
+      line-height: 18px
 
 @media (max-width: 460px)
   .navbar
@@ -549,6 +650,24 @@
         font-size: 14px
       &__label
         margin-top: 5px
+  .actual
+    &-slider
+      height: 430px
+      &__title
+        font-size: 18px
+        line-height: 27px
+    &__item
+      width: 100%
+      &--big
+        background-position: top right -150px, top 65px right -40px
+    &__title
+      &--big
+        width: 130px
+        font-size: 16px
+        line-height: 18px
+    &__text
+      &--big
+        width: 110px
 
 @media (max-width: 320px)
   .main
