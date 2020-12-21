@@ -189,22 +189,22 @@
                     </a>
                     <ul class="footer__contacts-list">
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Контакты
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Работа у нас
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" class="footer__contacts-link">
                                 Реклама
                             </a>
                         </li>
                         <li class="footer__contacts-item">
-                            <a href="" class="footer__contacts-link">
+                            <a href="#" data-toggle="modal" class="footer__contacts-link">
                                 Обратная связь
                             </a>
                         </li>
@@ -244,6 +244,68 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <svg class="modal__close-icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </a>
+
+            <div class="modal__feedback-form">
+                <h3 class="modal__title">
+                    Обратная связь
+                </h3>
+                <form action="send.php" method="POST" class="modal__form form">
+
+                    <div class="modal__wrapper">
+                        <label for="theme" class="modal__label">Тема</label>
+                        <select id="theme" name="theme" class="modal__select">
+                            <option class="modal__select-option">
+                                Выберите тему
+                            </option>
+                            <option value="Реклама" id="modal-option-1" class="modal__select-option">
+                                Реклама
+                            </option>
+                            <option value="Работа" id="modal-option-2" class="modal__select-option">
+                                Работа
+                            </option>
+                            <option value="Стать автором" id="modal-option-3" class="modal__select-option">
+                                Стать автором
+                            </option>
+                            <option value="Курсы" id="modal-option-4" class="modal__select-option">
+                                Курсы
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="modal__wrapper modal__wrapper--textarea">
+                        <label for="message" class="modal__label">Сообщение</label>
+                        <textarea id="message" name="message" class="modal__textarea"></textarea>
+                    </div>
+
+                    <div class="modal__wrapper">
+                        <label for="email" class="modal__label modal__label-mail">Email</label>
+                        <input id="email" type="email" name="email" class="modal__input" required>
+                    </div>
+
+                    <div class="modal__wrapper">
+                        <label class="modal__label-check">
+                        <input type="checkbox" checked class="modal__checkbox">
+                            Согласен с обработкой данных
+                        </label>
+                    </div>
+
+                    <div class="modal__btn">
+                        <button type="submit" class="modal__button button" name="button" value="feedbackBtn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

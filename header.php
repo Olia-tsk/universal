@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-menu">
                 <a href="index.html" class="navbar-logo">
@@ -25,6 +25,17 @@
                 </a>
 
                 <ul class="navbar-menu__list">
+                    <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                        <form action="#" class="search navbar-menu__search navbar-menu__search--mobile--visible">
+                            <input type="search" class="search__input" placeholder="Поиск">
+                            <button class="search__button">
+                                <svg class="search__icon">
+                                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">Статьи</a>
                     </li>
@@ -51,11 +62,17 @@
                 <form action="#" class="search navbar-menu__search">
                     <input type="search" class="search__input" placeholder="Поиск">
                     <button class="search__button">
-                    <svg class="search__icon">
-                      <use xlink:href="img/sprite.svg#icon-search"></use>
-                    </svg>
-                  </button>
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
                 </form>
+
+                <button class="navbar-menu__button burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
             </div>
         </div>
     </header>

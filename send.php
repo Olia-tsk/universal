@@ -71,7 +71,7 @@ if ($button == 'subscribeBtn') {
 
 } elseif ($button == 'feedbackBtn') {
     sendMessage($titleModal, $bodyModal);
-    header('Location: thankyou.php');
+    header('Location: feedback.php');
 } else {
     echo 'Error';
 }
