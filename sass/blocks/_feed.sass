@@ -1,0 +1,51 @@
+.feed
+  padding-top: 60px
+  padding-bottom: 90px
+  background-color: #f5f5f5
+  &-wrapper
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &-card
+    width: 25%
+    margin-right: 29px
+    &:last-child
+      margin-right: 0
+    &__image
+      width: 100%
+      object-fit: cover
+      border-radius: 10px
+      margin-bottom: 11px
+    &__title
+      margin: 0
+      margin-bottom: 15px
+      font-family: 'Roboto'
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+    &__link
+      text-decoration: none
+      color: inherit
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      &-info
+        display: flex
+        align-items: center
+        margin-right: 11px
+      &-icon
+        fill: #bcbfc2
+        margin-right: 5px
+        &--eye
+          width: 15px
+          height: 10px
+        &--comment
+          width: 15px
+          height: 15px
+      &-amount
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #939699

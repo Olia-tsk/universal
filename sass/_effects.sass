@@ -237,6 +237,13 @@
       background: #4d5157
       transition: none
 
+.feed-card
+  &__link
+    &:hover
+      color: #4592ff
+    &:active
+      color: #FF0000
+
 // Отключаем эффекты на планшетах
 @media (max-width: 768px)
   .navbar
@@ -463,3 +470,10 @@
       &:active
         background: #4592ff
         transition: none
+
+  .feed-card
+  &__link
+    &:hover
+      color: $dark
+    &:active
+      color: $dark
