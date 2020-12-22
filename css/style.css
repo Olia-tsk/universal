@@ -2839,9 +2839,14 @@ input {
 }
 
 .gallery-slider {
+  width: 100%;
   height: 89%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-slider__item {
   overflow: hidden;
 }
 
@@ -2849,6 +2854,7 @@ input {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-position: center;
 }
 
 .gallery-slider__button {
@@ -2858,6 +2864,7 @@ input {
   width: 60px;
   height: 60px;
   border: none;
+  border-radius: 50%;
   z-index: 50;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -2893,6 +2900,7 @@ input {
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -3033,6 +3041,9 @@ input {
   }
   .article-top__text {
     width: 55%;
+  }
+  .gallery__author {
+    margin-right: 0;
   }
 }
 
@@ -3373,6 +3384,10 @@ input {
     font-size: 23px;
     margin-bottom: 25px;
   }
+  .gallery-slider__button {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3429,6 +3444,28 @@ input {
   }
   .hero__bookmark {
     top: 33%;
+  }
+  .gallery-wrapper {
+    height: 550px;
+  }
+  .gallery__bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery__text {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+  }
+  .gallery__author {
+    width: 30%;
+    padding-left: 20px;
+  }
+  .gallery__author-name {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -3657,6 +3694,9 @@ input {
     font-size: 20px;
     line-height: 26px;
   }
+  .gallery-wrapper {
+    height: 530px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -3782,6 +3822,15 @@ input {
   .article-top__title {
     font-size: 18px;
     line-height: 22px;
+  }
+  .gallery {
+    padding-top: 10px;
+  }
+  .gallery-wrapper {
+    height: 480px;
+  }
+  .gallery__author {
+    width: 53%;
   }
 }
 
@@ -3929,6 +3978,32 @@ input {
   .article-top__text--dropcap {
     width: 100%;
     margin-top: 15px;
+  }
+  .gallery-slider__button {
+    width: 30px;
+    height: 30px;
+  }
+  .gallery-slider__button--next {
+    right: 25px;
+  }
+  .gallery-slider__button--prev {
+    left: 21px;
+  }
+  .gallery-wrapper {
+    height: 410px;
+  }
+  .gallery__author-avatar {
+    width: 30px;
+    height: 30px;
+  }
+  .gallery__bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .gallery__text {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -4094,6 +4169,19 @@ input {
   .hero__text {
     margin-bottom: 30px;
     width: 90%;
+  }
+  .gallery-wrapper {
+    height: 290px;
+  }
+  .gallery__bottom {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .gallery__text {
+    padding-right: 5px;
+  }
+  .gallery__author {
+    padding-left: 5px;
   }
 }
 
