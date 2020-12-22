@@ -47,6 +47,28 @@ $(document).ready(function() {
         },
     });
 
+    // Подключение слайдера на внутренней странице
+    var actualSlider = new Swiper('.gallery-slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 300,
+
+        autoplay: {
+            delay: 4500,
+        },
+
+        navigation: {
+            nextEl: '.gallery-slider__button--next',
+            prevEl: '.gallery-slider__button--prev',
+        },
+
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+    });
+
     // Активируем бургер
     var burger = document.querySelector('.burger');
     burger.addEventListener('click', function() {
