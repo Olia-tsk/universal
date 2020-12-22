@@ -1,6 +1,9 @@
 @media (max-width: 1300px)
   .article-top-card
     right: 5%
+  .article-bottom
+    &__card
+      right: 7%
 
 @media (max-width: 1200px)
   .container
@@ -154,6 +157,9 @@
     &__text
       line-height: 27px
       width: 78%
+  .article-bottom
+    &__card
+      width: 240px
 
 @media (max-width: 992px)
   .container
@@ -239,6 +245,9 @@
     height: 540px
     &__bookmark
       left: 5%
+  .article-bottom
+    &__card
+      width: 220px
 
 @media (max-width: 930px)
   .tabs
@@ -391,6 +400,22 @@
       &__button
         width: 40px
         height: 40px
+  .article-bottom
+    &__text
+      font-size: 14px
+      line-height: 24px
+    &__quote
+      font-size: 20px
+      line-height: 29px
+      margin-top: 60px
+    &__card
+      width: 23%
+      &-title
+        font-size: 18px
+        line-height: 25px
+      &-subtitle
+        font-size: 15px
+        line-height: 23px
 
 @media (max-width: 768px)
   .main
@@ -458,6 +483,14 @@
       &-name
         font-size: 12px
         line-height: 16px
+  .article-bottom
+    &__quote
+      font-size: 16px
+      line-height: 26px
+      margin-top: 35px
+      margin-bottom: 35px
+    &__title
+      margin-top: 50px
 
 @media (max-width: 745px)
   .container
@@ -651,6 +684,26 @@
   .gallery
     &-wrapper
       height: 530px
+  .article-bottom
+    &__text
+      margin-left: 0
+      margin-bottom: 20px
+    &__quote
+      margin-left: 0
+      &::before
+        left: 0
+    &__title
+      margin-left: 0
+      margin-top: 40px
+      font-size: 20px
+      line-height: 26px
+    &__share
+      margin-left: 0
+    &__tags
+      margin-left: 0
+      margin-top: 35px
+    &__card
+      right: 8%
 
 @media (max-width: 683px)
   .newsline
@@ -766,6 +819,30 @@
       height: 480px
     &__author
       width: 53%
+  .article-bottom
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__word
+      font-size: 12px
+    &__amount
+      font-size: 12px
+    &__icon
+      width: 15px
+      height: 15px
+    &__tag
+      font-size: 12px
+    &__card
+      &-title
+        font-size: 16px
+        line-height: 20px
+      &-subtitle
+        font-size: 14px
+        line-height: 21px
+      &-text
+        font-size: 12px
+        line-height: 19px
+        margin-bottom: 15px
 
 @media (max-width: 576px)
   .search
@@ -915,6 +992,24 @@
       padding-bottom: 10px
       padding-top: 10px
       padding-left: 10px
+  .article-bottom
+    &__text
+      width: 100%
+    &__quote
+      width: 100%
+    &__tag
+      margin-bottom: 10px
+    &__title
+      width: 100%
+    &__share
+      flex-direction: column
+      align-items: flex-start
+    &__button
+      margin-bottom: 10px
+    &__card
+      width: 50%
+      right: auto
+      top: 98%
 
 @media (max-width: 460px)
   .navbar
@@ -1066,6 +1161,10 @@
       padding-right: 5px
     &__author
       padding-left: 5px
+  .article-bottom
+    padding-top: 30px
+    &__card
+      width: 75%
 
 @media (max-width: 320px)
   .main
@@ -1079,3 +1178,9 @@
   .modal
     &__dialog
       width: 85%
+  .article-bottom
+    &__quote
+      font-size: 12px
+      line-height: 23px
+      margin-top: 30px
+      margin-bottom: 20px

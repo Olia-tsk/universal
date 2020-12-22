@@ -217,6 +217,26 @@
     &:active
       color: #4d5157
 
+.article-bottom
+  &__tag
+    &:hover
+      background-color: #4593ff70
+    &:active
+      background-color: #4592ff
+      color: #ffffff
+
+  &__button
+    &:hover
+      text-decoration: none
+      background: #1659b6
+      box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2)
+      color: #ffffff
+      text-shadow: -1px -1px 0 #344d9e
+      transition: all 250ms linear
+    &:active
+      background: #4d5157
+      transition: none
+
 // Отключаем эффекты на планшетах
 @media (max-width: 768px)
   .navbar
@@ -424,3 +444,22 @@
         color: $dark
       &:active
         color: $dark
+
+  .article-bottom
+    &__tag
+      &:hover
+        background-color: #ffffff
+      &:active
+        background-color: #ffffff
+        color: $dark
+    &__button
+      &:hover
+        text-decoration: none
+        background: #4592ff
+        box-shadow: none
+        color: #ffffff
+        text-shadow: none
+        transition: none
+      &:active
+        background: #4592ff
+        transition: none
