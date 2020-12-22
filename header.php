@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header class="navbar navbar__mobile navbar__mobile--fixed">
+<body class="inner">
+    <header class="navbar navbar--light navbar__mobile navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-menu">
                 <a href="index.html" class="navbar-logo">
-                    <img src="img/navbar-logo.png" alt="logo: Universal" class="navbar-logo__image">
+                    <img src="img/logo-blue.png" alt="logo: Universal" class="navbar-logo__image">
                 </a>
 
                 <ul class="navbar-menu__list">
                     <li class="navbar-menu__item navbar-menu__item--mobile--visible">
                         <form action="#" class="search navbar-menu__search navbar-menu__search--mobile--visible">
-                            <input type="search" class="search__input" placeholder="Поиск">
-                            <button class="search__button">
-                                <svg class="search__icon">
+                            <input type="search" class="search__input search__input--light" placeholder="Поиск">
+                            <button class="search__button search__button--light">
+                                <svg class="search__icon search__icon--light">
                                     <use xlink:href="img/sprite.svg#icon-search"></use>
                                 </svg>
                             </button>
@@ -37,41 +37,41 @@
                     </li>
 
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Статьи</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">Статьи</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Новости</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">Новости</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Курсы</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">Курсы</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">HTML</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">HTML</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">CSS</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">CSS</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">JavaScript</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">JavaScript</a>
                     </li>
                     <li class="navbar-menu__item">
-                        <a href="#" class="navbar-menu__link">Web Design</a>
+                        <a href="#" class="navbar-menu__link navbar-menu__link--light">Web Design</a>
                     </li>
                 </ul>
 
                 <form action="#" class="search navbar-menu__search">
-                    <input type="search" class="search__input" placeholder="Поиск">
-                    <button class="search__button">
-                        <svg class="search__icon">
+                    <input type="search" class="search__input search__input--light" placeholder="Поиск">
+                    <button class="search__button search__button--light">
+                        <svg class="search__icon search__icon--light">
                             <use xlink:href="img/sprite.svg#icon-search"></use>
                         </svg>
                     </button>
                 </form>
 
-                <button class="navbar-menu__button burger">
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
-                    <span class="burger__line"></span>
+                <button class="navbar-menu__button burger burger--light">
+                    <span class="burger__line burger__line--light"></span>
+                    <span class="burger__line burger__line--light"></span>
+                    <span class="burger__line burger__line--light"></span>
                 </button>
             </div>
         </div>

@@ -11,6 +11,7 @@
     <p class="thankyou__text">
       Спасибо, что вы с нами!
     </p>
+    <a href="index.html" class="button thankyou__button">Назад</a>
   </div>
 </section>
 

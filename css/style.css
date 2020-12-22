@@ -426,6 +426,15 @@ input {
   color: #4592ff;
 }
 
+.thankyou {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.thankyou__button {
+  margin-top: 15px;
+}
+
 .navbar {
   background-color: #262D33;
 }
