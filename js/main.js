@@ -130,10 +130,14 @@ $(document).ready(function() {
                 },
                 comment: {
                     required: "Сначала напишите комментарий",
+                },
+                modalAccept: {
+                    required: "Подтвердите согласие на обработку персональных данных",
                 }
             }
         });
     })
+
 
     // Раскрытие дополнительных комментариев
     var btnShow = $('.comments__bottom-button--show');
@@ -159,6 +163,5 @@ $(document).ready(function() {
         comments.addClass('comments-item__hidden-comment');
         activeComments.addClass('comments-item__border-none');
     }
-
 
 });

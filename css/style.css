@@ -2249,6 +2249,14 @@ input {
   color: #ffffff;
 }
 
+.article-bottom__card-subtitle-link:hover {
+  color: #4592ff;
+}
+
+.article-bottom__card-subtitle-link:active {
+  color: #4d5157;
+}
+
 .article-bottom__button:hover {
   text-decoration: none;
   background: #1659b6;
@@ -2482,6 +2490,12 @@ input {
     background: #4592ff;
     transition: none;
   }
+  .article-bottom__card-subtitle-link:hover {
+    color: #262D33;
+  }
+  .article-bottom__card-subtitle-link:active {
+    color: #262D33;
+  }
   .feed-card__link:hover {
     color: #262D33;
   }
@@ -2641,6 +2655,7 @@ input {
   border-radius: 3px;
   overflow: hidden;
   fill: red;
+  cursor: pointer;
 }
 
 .modal__btn {
@@ -3197,6 +3212,10 @@ input {
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
+}
+
+.article-bottom__card-subtitle-link {
+  color: inherit;
 }
 
 .article-bottom__card-text {
