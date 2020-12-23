@@ -57,8 +57,13 @@
     &__title
       width: 100%
   .article-top
+    &-card
+      right: 3%
     &__text
       width: 62%
+  .comments
+    &-wrapper
+      width: 80%
 
 @media (max-width: 1100px)
   .navbar
@@ -102,9 +107,6 @@
   .gallery
     &__author
       margin-right: 0
-  .comments
-    &-wrapper
-      width: 65%
 
 @media (max-width: 1024px)
   .main
@@ -131,6 +133,8 @@
       border-left: 1px solid #d9dadb
       &:first-child
         border-left: none
+      &:last-child
+        padding-bottom: 17px
   .newsline
     &-list
       padding-bottom: 30px
@@ -161,8 +165,15 @@
     &__card
       width: 240px
   .comments
-    &-wrapper
-      margin-left: 170px
+    &__header
+      width: 90%
+    &-item
+      width: 90%
+    &__bottom
+      &-button
+        width: 90%
+    &-feedback
+      width: 90%
 
 @media (max-width: 992px)
   .container
@@ -255,11 +266,6 @@
   .article-bottom
     &__card
       width: 220px
-  .comments
-    &-wrapper
-      margin-left: auto
-      margin-right: auto
-      width: 72%
   .to-top-icon
     width: 40px
     height: 40px
@@ -412,8 +418,6 @@
       line-height: 24px
       &--dropcap
         margin-bottom: 30px
-    &-card
-      top: 482px
     &__title
       font-size: 23px
       margin-bottom: 25px
@@ -541,8 +545,6 @@
   .comments
     padding-top: 50px
     padding-bottom: 5px
-    &-wrapper
-      width: 80%
     &__header
       padding-bottom: 10px
     &-item
@@ -556,6 +558,8 @@
 @media (max-width: 745px)
   .container
     max-width: 85%
+  .main
+    padding-top: 65px
   .navbar
     &-menu
       &__list
@@ -721,8 +725,8 @@
   .article-top
     padding-top: 47px
     &-card
-      top: 315px
-      width: 23%
+      top: -100px
+      width: 25%
       &__info
         padding: 15px
       &__name
@@ -731,7 +735,6 @@
       &__avatar
         width: 60px
         height: 60px
-
     &__text
       margin-left: 0
       margin-bottom: 20px
@@ -1115,7 +1118,7 @@
     &__card
       width: 50%
       right: auto
-      top: 98%
+      top: 101%
   .feed
     padding-top: 45px
     padding-bottom: 55px
@@ -1147,6 +1150,10 @@
         width: 105px
         height: 25px
     &-menu
+      &__list
+        &--mobile
+          &--visible
+            top: 55px
       &__link
         font-size: 14px
         line-height: 18px
@@ -1328,11 +1335,10 @@
       &__form
         &::after
           content: none
-  .error
 
 @media (max-width: 320px)
   .main
-    padding-top: 5px
+    padding-top: 55px
   .button
     font-size: 12px
     line-height: 15px
