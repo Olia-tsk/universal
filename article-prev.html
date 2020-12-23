@@ -81,7 +81,7 @@
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero__top">
-                    <span class="hero__label">Новости</span>
+                    <span class="hero__label">Популярное</span>
                     <div class="hero__navigation">
                         <div class="hero__home">
                             <svg class="hero__nav-icon hero__nav-icon--home">
@@ -93,10 +93,10 @@
                             <svg class="hero__nav-icon hero__nav-icon--prev">
                               <use xlink:href="img/sprite.svg#arrow-prev"></use>
                             </svg>
-                            <a href="article-prev.html" class="hero__nav-link">Назад</a>
+                            <a href="#" class="hero__nav-link">Назад</a>
                         </div>
                         <div class="hero__next">
-                            <a href="article-next.html" class="hero__nav-link">Вперед</a>
+                            <a href="article.html" class="hero__nav-link">Вперед</a>
                             <svg class="hero__nav-icon hero__nav-icon--next">
                               <use xlink:href="img/sprite.svg#arrow-next"></use>
                             </svg>
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <h1 class="hero__title">
-                    Новый налоговый режим для фрилансеров — налог на проф. доход
+                    20 слов о веб-разработке, которые помогут вам блеснуть в разговоре
                 </h1>
 
                 <svg class="hero__bookmark">
@@ -112,7 +112,7 @@
                 </svg>
 
                 <p class="hero__text">
-                    Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                    Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому кругу.
                 </p>
                 <div class="hero__bottom">
                     <div class="hero__date">
@@ -427,11 +427,12 @@
                     <h2 class="comments__title">Комментарии</h2>
                     <span class="comments__amount">19</span>
                 </div>
-                <a href="#comment" class="comments__button">
+                <button class="comments__button">
                     <svg class="comments__button-icon">
                         <use xlink:href="img/sprite.svg#pencil"></use>
-                    </svg> Добавить комментарий
-                </a>
+                    </svg>
+                    Добавить комментарий
+                </button>
             </div>
 
             <div class="comments-item">
@@ -686,7 +687,7 @@
                     <h3 class="comments-feedback__title">Что вы думаете на этот счет?</h3>
 
                     <form action="send.php" method="POST" class="comments-feedback__form form">
-                        <textarea id="comment" name="comment" class="comments-feedback__textarea" required minlength="100"></textarea>
+                        <textarea name="comment" class="comments-feedback__textarea" required minlength="100"></textarea>
 
                         <button class="comments-feedback__button button" name="button" value="commentBtn">
                             Отправить

@@ -5,7 +5,6 @@ $(document).ready(function() {
 
     tabsItem.on('click', function(event) {
         var activeContent = $(this).attr('data-target');
-        console.log(activeContent)
         tabsItem.removeClass('tabs__item--active');
         contentItem.removeClass('main-content__item--active');
         $(activeContent).toggleClass('main-content__item--active');
@@ -122,7 +121,7 @@ $(document).ready(function() {
         $(this).validate({
             messages: {
                 subscriptionalEmail: {
-                    required: "Вы не можете оформить подписку, не указав почты :(",
+                    required: "Укажите почту",
                     email: "Пожалуйста, укажите корректный email"
                 },
                 email: {
