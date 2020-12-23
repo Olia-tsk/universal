@@ -3,10 +3,10 @@
 <section class="thankyou">
   <div class="container">
     <h1 class="thankyou__title">
-      Ваш запрос отправлен!
+      Ваш комментарий отправлен
     </h1>
     <p class="thankyou__text">
-      Мы изучим ваше обращение и свяжемся с Вами по электронной почте, которую Вы указали в сообщении.
+      Очень скоро наши модераторы обработают его и он будет опубликован на сайте
     </p>
     <a href="index.html" class="button thankyou__button">Назад</a>
   </div>

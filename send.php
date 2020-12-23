@@ -9,6 +9,7 @@ $subEmail = $_POST['subscriptionalEmail'];
 $option = $_POST['modal-option'];
 $message = $_POST['message'];
 $modalMail = $_POST['email'];
+$comment = $_POST['comment'];
 $button = $_POST['button'];
 
 
@@ -26,6 +27,13 @@ $bodyModal = "
 <b>Тема:</b> $option<br>
 <b>Сообщение:</b> $message<br>
 <b>Почта отправителя:</b> $modalMail
+";
+
+// Формирование письма с комментарием
+$titleComment = "Новый комментарий";
+$bodyComment = "
+<h2>Опубликован новый комментарий:</h2>
+$comment
 ";
 
 function sendMessage ($title,$body) {
@@ -72,6 +80,9 @@ if ($button == 'subscribeBtn') {
 } elseif ($button == 'feedbackBtn') {
     sendMessage($titleModal, $bodyModal);
     header('Location: feedback.php');
+} elseif ($button == 'commentBtn') {
+    sendMessage($titleComment, $bodyComment);
+    header('Location: comment.php');
 } else {
     echo 'Error';
 }

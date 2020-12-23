@@ -128,6 +128,9 @@ $(document).ready(function() {
                 email: {
                     required: "Для отправки обращения, укажите почту",
                     email: "Пожалуйста, укажите корректный email"
+                },
+                comment: {
+                    required: "Сначала напишите комментарий",
                 }
             }
         });
