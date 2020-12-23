@@ -101,6 +101,9 @@
   .gallery
     &__author
       margin-right: 0
+  .comments
+    &-wrapper
+      width: 65%
 
 @media (max-width: 1024px)
   .main
@@ -160,6 +163,9 @@
   .article-bottom
     &__card
       width: 240px
+  .comments
+    &-wrapper
+      margin-left: 170px
 
 @media (max-width: 992px)
   .container
@@ -248,6 +254,11 @@
   .article-bottom
     &__card
       width: 220px
+  .comments
+    &-wrapper
+      margin-left: auto
+      margin-right: auto
+      width: 72%
 
 @media (max-width: 930px)
   .tabs
@@ -333,6 +344,13 @@
     margin-left: 0
   .article-top-card
     max-width: 200px
+  .comments
+    &__title
+      font-size: 30px
+      line-height: 39px
+    &__amount
+      font-size: 30px
+      line-height: 39px
 
 @media (max-width: 835px)
   .card
@@ -416,6 +434,23 @@
       &-subtitle
         font-size: 15px
         line-height: 23px
+  .comments
+    padding-top: 70px
+    &__title
+      font-size: 22px
+      line-height: 32px
+    &-item
+      &__name
+        font-size: 14px
+        line-height: 24px
+      &__text
+        font-size: 14px
+        line-height: 24px
+    &__button
+      font-size: 12px
+      &-icon
+        width: 14px
+        height: 14px
 
 @media (max-width: 768px)
   .main
@@ -499,6 +534,19 @@
       width: 34%
       margin: 0
       margin-bottom: 20px
+  .comments
+    padding-top: 50px
+    &-wrapper
+      width: 80%
+    &__header
+      padding-bottom: 10px
+    &-item
+      &__avatar
+        width: 50px
+        height: 50px
+    &__bottom
+      &-button
+        margin-bottom: 45px
 
 @media (max-width: 745px)
   .container
@@ -712,6 +760,22 @@
       margin-top: 35px
     &__card
       right: 8%
+  .comments
+    &-wrapper
+      width: 85%
+    &__amount
+      font-size: 20px
+      line-height: 28px
+    &__title
+      font-size: 20px
+      line-height: 28px
+    &-feedback
+      &__title
+        font-size: 18px
+        line-height: 21px
+      &__image
+        width: 50px
+        height: 50px
 
 @media (max-width: 683px)
   .newsline
@@ -856,6 +920,29 @@
       &__title
         font-size: 14px
         line-height: 21px
+  .comments
+    &-item
+      &__top
+        margin-bottom: 5px
+      &__name
+        font-size: 12px
+        line-height: 21px
+      &__time
+        font-size: 10px
+        line-height: 14px
+      &__text
+        font-size: 12px
+        line-height: 21px
+    &__bottom
+      &-button
+        font-size: 12px
+        line-height: 14px
+    &-feedback
+      &__title
+        font-size: 16px
+        line-height: 20px
+      &__textarea
+        width: 92%
 
 @media (max-width: 576px)
   .search
@@ -1033,6 +1120,19 @@
       width: 45%
       &__title
         margin-bottom: 10px
+  .comments
+    &__header
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      font-size: 18px
+    &-item
+      padding-bottom: 20px
+      &__text
+        padding-right: 50px
+    &-feedback
+      &__button
+        font-size: 12px
 
 @media (max-width: 460px)
   .navbar
@@ -1194,6 +1294,34 @@
       align-items: center
     &-card
       width: 85%
+  .comments
+    &-item
+      &__top
+        flex-direction: column
+        align-items: flex-start
+      &__text
+        padding-right: 15px
+      &__bottom
+        flex-wrap: wrap
+      &__reply
+        margin-bottom: 5px
+    &-feedback
+      width: 100%
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin: 0
+      padding: 20px
+      &__image
+        margin-bottom: 10px
+        margin-right: 0
+      &__title
+        text-align: center
+      &__textarea
+        width: 100%
+      &__form
+        &::after
+          content: none
 
 @media (max-width: 320px)
   .main

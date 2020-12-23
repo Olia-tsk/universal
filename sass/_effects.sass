@@ -244,6 +244,14 @@
     &:active
       color: #FF0000
 
+.comments
+  &__button, &__bottom-button
+    &:hover
+      background-color: #4593ff70
+    &:active
+      background-color: #4592ff
+      color: #ffffff
+
 // Отключаем эффекты на планшетах
 @media (max-width: 768px)
   .navbar
@@ -472,8 +480,15 @@
         transition: none
 
   .feed-card
-  &__link
-    &:hover
-      color: $dark
-    &:active
-      color: $dark
+    &__link
+      &:hover
+        color: $dark
+      &:active
+        color: $dark
+  .comments
+    &__button, &__bottom-button
+      &:hover
+        background-color: #ffffff
+      &:active
+        background-color: #ffffff
+        color: $dark

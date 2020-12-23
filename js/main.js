@@ -133,4 +133,30 @@ $(document).ready(function() {
         });
     })
 
+    // Раскрытие дополнительных комментариев
+    var btnShow = $('.comments__bottom-button--show');
+    var btnHide = $('.comments__bottom-button--hide');
+    var comments = $('.comments-item__hidden-comment');
+    var activeComments = $('.comments-item__border-none');
+    var lastComment = $('.comments-item--last-comment');
+
+    btnShow.on('click', showComments);
+    btnHide.on('click', hideComments);
+
+    function showComments() {
+        btnShow.addClass('comments__bottom-button--hidden');
+        btnHide.removeClass('comments__bottom-button--hidden');
+        activeComments.removeClass('comments-item__border-none');
+        comments.removeClass('comments-item__hidden-comment');
+        lastComment.addClass('comments-item__border-none')
+    }
+
+    function hideComments() {
+        btnShow.removeClass('comments__bottom-button--hidden');
+        btnHide.addClass('comments__bottom-button--hidden');
+        comments.addClass('comments-item__hidden-comment');
+        activeComments.addClass('comments-item__border-none');
+    }
+
+
 });
