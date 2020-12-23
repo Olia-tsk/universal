@@ -78,21 +78,21 @@ $(document).ready(function() {
     var modalButton = $("[data-toggle=modal]");
     var modalCloseButton = $('.modal__close');
     var modalWindow = $('.modal__dialog');
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
     modalButton.on('click', openModal);
     modalCloseButton.on('click', closeModal);
 
     function openModal(event) {
         event.preventDefault();
-        var modalOverlay = $('.modal__overlay');
-        var modalDialog = $('.modal__dialog');
+
         modalOverlay.addClass('modal__overlay--visible');
         modalDialog.addClass('modal__dialog--visible');
     };
 
     function closeModal(event) {
         event.preventDefault();
-        var modalOverlay = $('.modal__overlay');
-        var modalDialog = $('.modal__dialog');
+
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
     };
@@ -100,9 +100,8 @@ $(document).ready(function() {
     // Закрыть модальное окно на кнопку esc
     $(document).on('keydown', function(e) {
         if (e.keyCode == 27)
-            var modalOverlay = $('.modal__overlay');
-        var modalDialog = $('.modal__dialog');
-        modalOverlay.removeClass('modal__overlay--visible');
+
+            modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
     });
 
@@ -163,5 +162,26 @@ $(document).ready(function() {
         comments.addClass('comments-item__hidden-comment');
         activeComments.addClass('comments-item__border-none');
     }
+
+    $(function() {
+
+        //scroll to top
+        $('.to-top').click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+
+
+        //show up-button
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y > 800) {
+                $('.to-top').removeClass('to-top--hidden');
+            } else {
+                $('.to-top').addClass('to-top--hidden');
+            }
+        });
+
+    });
 
 });

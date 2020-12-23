@@ -118,10 +118,13 @@
 
 .to-top
   position: fixed
+  display: block
   transform: rotate(-90deg)
   right: 20px
   bottom: 20px
-  z-index: 100
+  z-index: 50
+  &--hidden
+    display: none
   &-icon
     fill: #1DA1F2
     width: 50px
