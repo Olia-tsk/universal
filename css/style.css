@@ -4229,6 +4229,7 @@ input {
   }
   .comments {
     padding-top: 50px;
+    padding-bottom: 5px;
   }
   .comments-wrapper {
     width: 80%;
