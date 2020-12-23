@@ -3817,7 +3817,7 @@ input {
     border-left: none;
   }
   .tabs__item:last-child {
-    padding-bottom: 17px;
+    padding-bottom: inherit;
   }
   .newsline-list {
     padding-bottom: 30px;

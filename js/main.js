@@ -78,21 +78,21 @@ $(document).ready(function() {
     var modalButton = $("[data-toggle=modal]");
     var modalCloseButton = $('.modal__close');
     var modalWindow = $('.modal__dialog');
-    var modalOverlay = $('.modal__overlay');
-    var modalDialog = $('.modal__dialog');
     modalButton.on('click', openModal);
     modalCloseButton.on('click', closeModal);
 
     function openModal(event) {
         event.preventDefault();
-
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
         modalOverlay.addClass('modal__overlay--visible');
         modalDialog.addClass('modal__dialog--visible');
     };
 
     function closeModal(event) {
         event.preventDefault();
-
+        var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
         modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
     };
@@ -100,8 +100,9 @@ $(document).ready(function() {
     // Закрыть модальное окно на кнопку esc
     $(document).on('keydown', function(e) {
         if (e.keyCode == 27)
-
-            modalOverlay.removeClass('modal__overlay--visible');
+            var modalOverlay = $('.modal__overlay');
+        var modalDialog = $('.modal__dialog');
+        modalOverlay.removeClass('modal__overlay--visible');
         modalDialog.removeClass('modal__dialog--visible');
     });
 
