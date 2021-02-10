@@ -654,7 +654,7 @@ input {
 }
 
 .tabs__item:last-child {
-  padding-bottom: 31px;
+  padding-bottom: 33px;
 }
 
 .tabs__item--active {
@@ -1311,7 +1311,7 @@ input {
 
 .newsfeed-main__image {
   margin-right: 25px;
-  width: 336px;
+  min-width: 336px;
   height: 195px;
   object-fit: cover;
 }
@@ -3817,7 +3817,7 @@ input {
     border-left: none;
   }
   .tabs__item:last-child {
-    padding-bottom: inherit;
+    padding-bottom: 17px;
   }
   .newsline-list {
     padding-bottom: 30px;
@@ -5040,6 +5040,9 @@ input {
     margin-bottom: 25px;
   }
   .tabs__item {
+    padding: 5px;
+  }
+  .tabs__item:last-child {
     padding: 5px;
   }
   .newsline-list__item {
